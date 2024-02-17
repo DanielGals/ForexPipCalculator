@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pip Calulator</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/png" href="logo.jpg"/>
+</head>
+<body>
+    <div class="container"> 
+        <div class="brand-title">WELCOME, KOLAS MARKETS</div>
+        <form class="inputs">
+            <label for="balance">Account Balance</label>
+            <input type="number" name="balance" id="balance">
+
+            <label for="risk">Risk Percentage (ex. 0.5 or 0.25)</label>
+            <input type="number" name="risk" id="risk">
+
+            <label for="stoploss">Stop loss (pips)</label>
+            <input type="number" name="stoploss" id="stoploss" required>
+
+            <button type="button"  id="clipboardButton">
+                Calculate
+            </button>
+        </form>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
