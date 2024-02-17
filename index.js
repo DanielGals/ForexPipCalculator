@@ -15,7 +15,45 @@ stoplosser.addEventListener('keyup',()=>{
     risk = risk / 100; 
     risk = risk + amount;
     pipSize = risk / stoploss;
-    pipSize = pipSize * (10000 / 1);
+    pipSize = pipSize * (amount / 1);
+    pipSize = pipSize / 10;
+
+    n = pipSize.toFixed(2);
+
+    document.getElementById("clipboardButton").innerText = n;
+});
+
+var balancer = document.getElementById("balance");
+balancer.addEventListener('keyup',()=>{
+    let amount = document.getElementById("balance").value;
+    let risk = document.getElementById("risk").value;
+    let stoploss = document.getElementById("stoploss").value;
+
+    let pipSize;
+    
+    risk = risk / 100; 
+    risk = risk + amount;
+    pipSize = risk / stoploss;
+    pipSize = pipSize * (amount / 1);
+    pipSize = pipSize / 10;
+
+    n = pipSize.toFixed(2);
+
+    document.getElementById("clipboardButton").innerText = n;
+});
+
+var risker = document.getElementById("risk");
+risker.addEventListener('keyup',()=>{
+    let amount = document.getElementById("balance").value;
+    let risk = document.getElementById("risk").value;
+    let stoploss = document.getElementById("stoploss").value;
+
+    let pipSize;
+    
+    risk = risk / 100; 
+    risk = risk + amount;
+    pipSize = risk / stoploss;
+    pipSize = pipSize * (amount / 1);
     pipSize = pipSize / 10;
 
     n = pipSize.toFixed(2);
@@ -39,7 +77,7 @@ clipboardButton.addEventListener('click',()=>{
     risk = risk / 100; 
     risk = risk + amount;
     pipSize = risk / stoploss;
-    pipSize = pipSize * (10000 / 1);
+    pipSize = pipSize * (amount / 1);
     pipSize = pipSize / 10;
 
     n = pipSize.toFixed(2);
